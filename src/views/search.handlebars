@@ -1,0 +1,16 @@
+<h1>Web search</h1>
+<form class="mb-3" action="/search" method="POST">
+  <div class="mb-3 mt-3">
+    <label for="search" class="form-label">Search for a website</label>
+    <input type="text" required name="search" class="form-control" id="search" />
+  </div>
+  <button type="submit" class="btn btn-primary">Search</button>
+  <div class="pt-2"></div>
+  {{#each matchedSites}}
+    <div class="pt-2">
+      <a href="{{link}}">{{name}}</a>
+      <p>{{desc}}</p>
+    </div>
+  {{/each}}
+
+</form>

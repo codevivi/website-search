@@ -1,0 +1,9 @@
+{
+  "sites": [
+    { "link": "https://pixabay.com/", "name": "pixabay", "desc": "images,image, pictures, download, free" },
+    { "link": "https://www.youtube.com/", "name": "youtube", "desc": "video, free, watch" },
+    { "link": "https://www.bbc.com/news", "name": "bbc", "desc": "news, articles" },
+    { "link": "https://unsplash.com/", "name": "unsplash", "desc": "images, pictures, image, download," }
+  ],
+  "users": [{ "name": "admin", "email": "admin@admin.com", "password": "1234" }]
+}
