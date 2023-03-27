@@ -14,10 +14,12 @@ export const getSites = async function () {
   let data = await getData();
   return data.sites;
 };
+
 export const getUsers = async function () {
   let data = await getData();
   return data.users;
 };
+
 async function getData() {
   try {
     let data = await readFile(DB, "utf-8");
@@ -26,10 +28,12 @@ async function getData() {
     return DEFAULT_DATA; //if file empty or not created
   }
 }
+
 async function writeData(data) {
   await mkdir(DB_PATH, { recursive: true });
   await writeFile(DB, data);
 }
+
 async function resaveData(data) {
   return await writeData(JSON.stringify(data));
 }
