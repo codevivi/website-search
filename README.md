@@ -38,3 +38,5 @@ Database - json file;
    ```sh
    npm start
    ```
+
+4. default login: admin@admin.com, 1234
